@@ -19,13 +19,15 @@ public class MainActivity extends AppCompatActivity {
 
     int[] state = {2, 2, 2, 2, 2, 2, 2, 2, 2};
 
+    //All possible win configuration
     int[][] win = {{0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 4, 8}, {2, 4, 6}};
 
     // pl=0 - o | 1 - x | 2 - none
     int pl = 0;
     boolean playable = true;
 
-
+    
+    //overriding click function
     public void click(View view) {
 
         ImageView xo = (ImageView) view;
